@@ -38,7 +38,7 @@
     },
     redirect: function (pageId, pageWidth, referrer) {
       var targetPath = this.targetPath(pageId);
-      if (this.shouldRedirect(pageWidth, referrer)) { this.redirectTo(targetPath); }
+      if (targetPath && this.shouldRedirect(pageWidth, referrer)) { this.redirectTo(targetPath); }
     }
   };
 
