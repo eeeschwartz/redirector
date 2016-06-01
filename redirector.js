@@ -27,7 +27,7 @@
     shouldRedirect: function (screenWidth, referrer) {
       if (screenWidth > this.maxWidth) { return false; }
       // dont redirect internal links
-      if (referrer.indexOf('lexingtonky.gov') > -1) { return false; }
+      if (referrer.length === 0 || (referrer.indexOf('lexingtonky.gov') > -1)) { return false; }
       return true;
     },
     targetPath: function (pageId) {
