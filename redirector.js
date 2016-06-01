@@ -43,7 +43,8 @@
   };
 
   var redirectTable = {
-    200: "/browse/recreation/aquatics",
+    // 200: "/browse/recreation/aquatics",
+    415: "/departments",
   };
 
   redirector.redirect(lib.param("page"), lib.width(), document.referrer);
