@@ -43,8 +43,10 @@
   };
 
   var redirectTable = {
-    // 200: "/browse/recreation/aquatics",
-    415: "/departments",
+    200: "/neighborhood-pools",
+    201: "/neighborhood-pools",
+    198: "/departments/parks-recreation",
+    276: "/raven-run-nature-sanctuary"
   };
 
   redirector.redirect(lib.param("page"), lib.width(), document.referrer);
